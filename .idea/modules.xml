@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MyExerciseLitho.iml" filepath="$PROJECT_DIR$/MyExerciseLitho.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my_study_litho/my_study_litho.iml" filepath="$PROJECT_DIR$/my_study_litho/my_study_litho.iml" />
+    </modules>
+  </component>
+</project>

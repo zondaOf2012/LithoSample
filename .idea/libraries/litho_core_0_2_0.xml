@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="litho-core-0.2.0">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/1d91b78771f1f9705c0080416387a66d97269f15/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/1d91b78771f1f9705c0080416387a66d97269f15/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.facebook.litho/litho-core/0.2.0/a824c98dd82bdceb7691c85cffaf9c3891a0854f/litho-core-0.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
