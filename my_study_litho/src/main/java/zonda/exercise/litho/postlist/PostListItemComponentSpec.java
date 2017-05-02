@@ -47,7 +47,7 @@ public class PostListItemComponentSpec {
                 )
                 .child(
                         ImagesComponent.create(c)
-                                .imageUrlArray(new String[3])
+                                .imageUrlArray(new String[80])
                 )
                 .child(
                         Row.create(c)

@@ -8,6 +8,7 @@
     <dimen name="avatar_margin">8dp</dimen>
     <dimen name="landlord_name_text_size">18sp</dimen>
     <dimen name="content_text_size">18sp</dimen>
+    <dimen name="post_image_num_size">12sp</dimen>
     <dimen name="post_publish_date_text_size">12sp</dimen>
     <dimen name="post_list_action_image_square">20dp</dimen>
 </resources>

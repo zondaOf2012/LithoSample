@@ -10,6 +10,8 @@ import com.facebook.litho.annotations.LayoutSpec;
 import com.facebook.litho.annotations.OnCreateLayout;
 import com.facebook.litho.annotations.Prop;
 import com.facebook.litho.widget.Image;
+import com.facebook.yoga.YogaEdge;
+import com.facebook.yoga.YogaPositionType;
 
 import zonda.exercise.litho.R;
 
@@ -48,7 +50,7 @@ public class ImagesComponentSpec {
             imagesBuilder
                     .child(
                             Image.create(c)
-                                    .drawableRes(R.drawable.test)
+                                    .drawableRes(R.color.colorAccent)
                                     .scaleType(FIT_XY)
                                     .withLayout()
                                     .widthPercent(100f)
@@ -61,7 +63,7 @@ public class ImagesComponentSpec {
                 imagesBuilder
                         .child(
                                 Image.create(c)
-                                        .drawableRes(R.drawable.test)
+                                        .drawableRes(R.color.colorAccent)
                                         .scaleType(CENTER_CROP)
                                         .withLayout()
                                         .widthPercent(100 / count)
@@ -72,6 +74,29 @@ public class ImagesComponentSpec {
             }
 //            imagesBuilder.justifyContent(SPACE_BETWEEN);
         }
+
+        if (imageUrlArray.length > 3) {
+            imagesBuilder.child(
+//                    ImageNumViewComponent.create(c)
+//                            .number(String.valueOf(imageUrlArray.length))
+//                            .withLayout()
+//                            .positionType(YogaPositionType.ABSOLUTE)
+//                            .positionDip(YogaEdge.RIGHT, 4)
+//                            .positionDip(YogaEdge.BOTTOM, 4)
+//                            .widthDip(20)
+//                            .heightDip(20)
+
+                    ImageNumDrawableComponent.create(c)
+                            .numberText(String.valueOf(imageUrlArray.length))
+                            .withLayout()
+                            .positionType(YogaPositionType.ABSOLUTE)
+                            .positionDip(YogaEdge.RIGHT, 4)
+                            .positionDip(YogaEdge.BOTTOM, 4)
+                            .widthDip(20)
+                            .heightDip(20)
+            );
+        }
+
         rootBuilder.child(imagesBuilder);
 
         return rootBuilder.build();

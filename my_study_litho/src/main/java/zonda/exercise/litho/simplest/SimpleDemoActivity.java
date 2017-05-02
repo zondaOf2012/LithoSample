@@ -18,15 +18,34 @@ import zonda.exercise.litho.postlist.PostListItemComponent;
 
 public class SimpleDemoActivity extends AppCompatActivity {
 
+    public final static String FLAG_KEY = "flag_key";
+
+    public final static int FLAG_HELLO_WORLD = 1;
+
+    public final static int FLAG_LITHO_ITEM = 2;
+
+    public final static int FLAG_LAYOUT_ITEM = 3;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        //setContentView(R.layout.activity_simple_demo);
+        int flag = getIntent().getIntExtra(FLAG_KEY, -1);
 
-//        helloWorld();
+        flag = FLAG_LITHO_ITEM;
 
-        createItemContent();
+        switch (flag) {
+            case FLAG_HELLO_WORLD:
+                helloWorld();
+                break;
+            case FLAG_LITHO_ITEM:
+                createItemContent();
+                break;
+            case FLAG_LAYOUT_ITEM:
+            default:
+                setContentView(R.layout.activity_item_demo);
+                break;
+        }
     }
 
     private void createItemContent() {

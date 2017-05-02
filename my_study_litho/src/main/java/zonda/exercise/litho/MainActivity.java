@@ -24,8 +24,8 @@ public class MainActivity extends BaseActivity {
                     ".simplest.SimpleDemoActivity"},
 //            {"SimpleRecyclerActivity",
 //                    ".SimpleRecyclerActivity"},
-//            {"PostListActivity",
-//                    ".PostListActivity"}
+            {"PostListActivity",
+                    "postlist.PostListActivity"}
     };
 
     @Override
